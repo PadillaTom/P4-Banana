@@ -86,8 +86,8 @@ nav ul li a:hover {
 /* End Nav */
 /* Banner */
 #banner {
-  min-height: 95vh;
-  max-width: 95%;
+  min-height: 100vh;
+  max-width: 100%;
   margin: 0 auto;
   background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
     url(./images/background-banner.jpg) center/cover no-repeat fixed;
@@ -127,3 +127,47 @@ nav ul li a:hover {
   color: var(--Cta2);
 }
 /* End Banner */
+/* Skills Section */
+#skills {
+  padding: 5rem 0;
+  background: var(--PrimaryLight);
+}
+.skills-container {
+  max-width: 95vw;
+  margin: 0 auto; /*Centramos todo*/
+}
+.skills-item {
+  /* border: 1px solid red; */
+  text-align: center;
+  margin: 1.5rem 0;
+}
+.skills-item .fa {
+  font-size: 3rem;
+  color: var(--Dark1);
+  letter-spacing: 1px;
+}
+.skills-item h1 {
+  font-size: 2rem;
+  letter-spacing: 2px;
+  margin: 1.75rem 0;
+  color: var(--PrimaryDark);
+  text-transform: uppercase;
+}
+.skills-item p {
+  width: 75%;
+  margin: 0 auto;
+  color: var(--Dark2);
+}
+@media screen and (min-width: 576px) {
+  .skills-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 1rem;
+  }
+}
+@media screen and (min-width: 992px) {
+  .skills-container {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+/* End Skills Section */
